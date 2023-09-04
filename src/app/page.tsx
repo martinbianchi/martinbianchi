@@ -1,3 +1,5 @@
+import { RubikCube } from "@/components/RubikCube/RubikCube";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -6,6 +8,7 @@ export default function Home() {
         <h1>Martin Bianchi</h1>
         <h3>React, Next.js, NodeJs</h3>
       </div>
+      <RubikCube />
     </main>
   );
 }
