@@ -157,21 +157,21 @@ export class RubikCube {
     });
   }
 
-  cubeInSameY(c1, c2) {
+  cubeInSameY(c1: Cube, c2: Cube) {
     return (
       c1.cubeGroup.position.y > c2.cubeGroup.position.y - 0.5 &&
       c1.cubeGroup.position.y < c2.cubeGroup.position.y + 0.5
     );
   }
 
-  cubeInSameX(c1, c2) {
+  cubeInSameX(c1: Cube, c2: Cube) {
     return (
       c1.cubeGroup.position.x > c2.cubeGroup.position.x - 0.5 &&
       c1.cubeGroup.position.x < c2.cubeGroup.position.x + 0.5
     );
   }
 
-  cubeInSameZ(c1, c2) {
+  cubeInSameZ(c1: Cube, c2: Cube) {
     return (
       c1.cubeGroup.position.z > c2.cubeGroup.position.z - 0.5 &&
       c1.cubeGroup.position.z < c2.cubeGroup.position.z + 0.5
