@@ -31,7 +31,7 @@ export class Cube {
 
     console.log({ color });
     const material = new THREE.MeshStandardMaterial({
-      emissive: "000000",
+      emissive: "#000000",
       emissiveIntensity: 1.12,
       roughness: 0.52,
       metalness: 1,

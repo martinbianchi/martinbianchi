@@ -7,6 +7,10 @@ export const RubikCube = () => {
   useEffect(() => {
     const element = init();
     canvasContainer.current?.appendChild(element);
+
+    return () => {
+      canvasContainer.current?.removeChild(element);
+    };
   }, []);
 
   return <div ref={canvasContainer}></div>;

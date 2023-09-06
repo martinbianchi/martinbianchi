@@ -42,7 +42,7 @@ export const init = () => {
   renderer.setClearColor(backgroundColor);
 
   onResize(camera, renderer);
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth - 20, window.innerHeight);
   //   document.body.appendChild(renderer.domElement);
 
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
